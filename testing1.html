@@ -1,0 +1,20 @@
+<html>
+<head>
+<script type="text/javascript">
+window.onload = draw;
+function draw() { // execute draw function when dom is read
+ var canvas = document.getElementById("canvas1");
+ var ctx = canvas.getContext("2d");
+// ctx.whateverDrawMethod(method's parament)
+
+ctx.fillStyle = "rgba(0,200,0,1)";
+ctx.fillRect(36,10,22,12);
+ctx.fillStyle = "rgba(5,200,0,1)";
+ctx.fillRect(36,50,22,12);
+}
+</script>
+</head>
+<body>
+<canvas id="canvas1" width="400" height="300"></canvas>
+</body>
+</html>
